@@ -58,10 +58,7 @@
       <h1>Sandesh Shrivastava</h1>
       <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer"></span></p>
       <div class="social-links">
-        <a href="www.twittwr.com" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        
         <a href="https://www.linkedin.com/in/sandesh-shrivastava-8010361ba" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <!-- <img src="assets\img\IMG-20230730-WA0075.jpg" alt=""> -->
@@ -102,7 +99,7 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.com (Computer)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>sandeshshrivastava12@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sandeshshrivastava12@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
@@ -401,10 +398,37 @@
             </div>
 
           </div>
+            <script>
+              // Create an object to represent the form
+var myForm = {
+  firstName: '',
+  lastName: '',
+};
+  // Function to handle form submission
+ function inp (){ 
+    // Access and store form field values
+    nam = document.getElementById('name').value;
+      email  = document.getElementById('email').value;
+      subject = document.getElementById("subject").value;
+      message = document.getElementById("message".value)
 
+    // Perform some action with the form data
+    console.log('Form submitted with the following data:');
+    console.log('First Name:',nam);
+    console.log('email:', email);
+    consol.log("Subject",subject)
+    consol.log("message",messasge)
+    // You can also perform AJAX requests, validation, or other operations here
+    document.getElementById('myForm').addEventListener('submit', );
+  }
+
+
+// Add an event listener to the form to handle submission
+
+            </script>
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form   role="form" class="php-email-form" id="myForm">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -413,11 +437,12 @@
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
+              
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5"  id="message"placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
